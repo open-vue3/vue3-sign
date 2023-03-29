@@ -1,0 +1,8 @@
+[
+  {
+    "compName": "ESign",
+    "compZhName": "电子签名",
+    "compDesc": "简单轻量的单子签名组件",
+    "compClassName": "vue-esign"
+  }
+]

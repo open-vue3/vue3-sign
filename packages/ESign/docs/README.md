@@ -37,16 +37,3 @@ import demo from './demo.vue'
 `onDrawEnd` | 当画布结束时的回调 | (canvas: HTMLCanvasElement) => void | -
 
 
-
-
-## 赞助 | Sponsored
-
-开源不易, 有了您的赞助, 我们会做的更好~
-
-<img src="http://cdn.dooring.cn/dr/WechatIMG2.jpeg" width="180px" />
-
-## 技术反馈和交流群 | Technical feedback and communication
-
-微信：beautifulFront
-
-<img src="http://cdn.dooring.cn/dr/qtqd_code.png" width="180px" />
