@@ -8,7 +8,7 @@ import demo from './demo.vue'
 
 # 基于Vue3的电子签名
 
-简单轻量的单子签名组件
+简单轻量的电子签名组件
 
 ## 基础用法
 <Preview comp-name="ESign" demo-name="demo">
@@ -18,11 +18,22 @@ import demo from './demo.vue'
 ## 属性
 参数 | 说明 | 类型 | 可选值 | 默认值 | 是否必填
 :-: | :-: | :-: | :-: | :-: | :-:
-`arg1` | 第一个参数 | string | - | `default` | 否 
-`arg2` | 第二个参数 | string | - | `default` | 否
+`width` | canvas 宽度 | number | - | `default` | 320 
+`height` | canvas 高度 | number | - | `default` | 160
+`lineWidth` | 线宽 | number | - | `default` | 4
+`strokeColor` | 线段颜色 | string | - | `default` | green
+`lineCap` | 设置线条两端圆角 | string | - | `default` | round
+`lineJoin` | 线条交汇处圆角 | string | - | `default` | round
+`bgColor` | 画布背景颜色 | string | - | `default` | transparent
+`showBtn` | true | boolean | - | `default` | true
+
+
 
 ## 事件
 事件名 | 说明 | 参数列表 | 参数说明
 :-: | :-: | :-: | :-:
-`click` | 点击事件 | $event | 原生的 dom event
-`customEvent` | 自定义事件 | [a, b, c] | a：参数一；b：参数二；c：参数三
+`onSave` | 当保存时的回调, blob为生成的图片bob | (blob: Blob) => void | -
+`onClear` | 当画布清空时的回调, 参数为画布的上下文对象,可以直接使用canvas的api | (canvasContext: CanvasRenderingContext2D) => void | -
+`onDrawEnd` | 当画布结束时的回调 | (canvas: HTMLCanvasElement) => void | -
+
+

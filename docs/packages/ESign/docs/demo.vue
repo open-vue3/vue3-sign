@@ -1,5 +1,6 @@
 <template>
   <div>
-    <vue-esign />
+    <ESign />
   </div>
 </template>
+
