@@ -1,6 +1,6 @@
 <template>
   <div class="esign-wrapper">
-    <canvas ref="canvasRef" :width="width" :height="height"></canvas>
+    <canvas ref="canvasRef" :width="width" :height="height" style="border:1px solid #000000;"></canvas>
     <div  v-show="showBtn" className="sign-btnWrap">
             <span  @click="cancel" className="sign-btn">清除</span>
             <span  @click="save" className="sign-btn primary">保存</span>
@@ -257,6 +257,8 @@ onUnmounted(()=>{
       font-size: 14px;
       background-color: #ccc;
       margin-right: 12px;
+      margin-bottom: 10px;
+      margin-left:10px;
       &.primary {
         color: #fff;
         background-color: #1677ff;
