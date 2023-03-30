@@ -19,13 +19,15 @@
     "极客恰恰"
   ],
   "scripts": {
+    "release": "npm run build && npm publish --access public",
     "dev": "vite --config ./build/base.config.ts",
     "build:doc": "vue-tsc --noEmit && vite build --config ./build/doc.config.ts && node script/copyDir.js",
     "build:lib": "vue-tsc --noEmit && vite build --config ./build/lib.config.ts",
     "gen": "node ./script/genNewComp/index.js"
   },
   "contributors": [
-    "alex_xu"
+    "alex_xu",
+    "极客恰恰"
   ],
   "files": [
     "dist"
